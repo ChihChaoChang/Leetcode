@@ -31,7 +31,7 @@ class Solution(object):
 '''
 better solution:
 for n in nums:
-            nums[abs(n) - 1] = -abs(nums[abs(n) - 1])
-        return [i + 1 for i, n in enumerate(nums) if n > 0]
+    nums[abs(n) - 1] = -abs(nums[abs(n) - 1])
+return [i + 1 for i, n in enumerate(nums) if n > 0]
 
 '''
