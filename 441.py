@@ -50,5 +50,16 @@ class Solution(object):
             return (counter)
 '''
 Better way to do it:
+	
+use the formula: ( 1 + x ) x / 2 = n
+and use the Quadratic formula to get: 
+1/2 * x^2 + 1/2*x = n  
+=> x^2 + x -2n =0
+=> x= -1+ math.sqrt(1- 1* 4* (-2*n)))/2
+
+class Solution(object):
+    def arrangeCoins(self, n):
+	return int(-1+ math.sqrt(1- 1* 4* (-2*n)))/2
+
 
 '''
