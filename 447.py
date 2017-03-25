@@ -29,6 +29,9 @@ class Solution(object):
             for x2, y2 in points:
                 dis=(x1-x2)**2 + (y1-y2)**2
                 cnt[dis]=cnt.get(dis,0)+1
+                #dict.get(key[, default])
+                #key -- This is the Key to be searched in the dictionary.
+                #default -- This is the Value to be returned in case key does not exist.
             for k in cnt:
                  permutation+= cnt[k]*(cnt[k]-1)
         return  permutation
