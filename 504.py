@@ -31,3 +31,13 @@ class Solution(object):
         if num>=0:
             new_string=string+str(num)
             return sign+new_string[::-1]
+
+'''
+ recurisve way:
+        if num < 0:
+            return str("-")+self.convertToBase7(-num)
+        if num <7 :
+            return str(num)
+        return self.convertToBase7(num/7)+str(num%7)
+       
+'''
