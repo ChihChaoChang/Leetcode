@@ -27,10 +27,9 @@ class Solution(object):
         while num>=7:
             string+= str(num%7)
             num/=7
-        
-        if num>=0:
-            new_string=string+str(num)
-            return sign+new_string[::-1]
+       
+        new_string=string+str(num)
+        return sign+new_string[::-1]
 
 '''
  recurisve way:
