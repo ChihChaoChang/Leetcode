@@ -31,3 +31,9 @@ class Solution(object):
         #{5:"Gold Medal", 4:"Silver Medal" ,3:"Bronze Medal" ,2: "4", 1: "5"}      
         return map(new_dict.get,nums)
         #["Gold Medal", "Silver Medal" , "Bronze Medal","4","5"]
+        '''
+        iterate keys from your list using map function:
+        lstval = list(map(dct.get, lst))
+        Or if you prefer list comprehension:
+        lstval = [dct[key] for key in lst]
+        '''
