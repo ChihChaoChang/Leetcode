@@ -26,9 +26,16 @@ class Solution(object):
             alltotal += i
         #[0,1,2,3]
         return alltotal-total
-  '''
-   better way to do it : use Xor
-   '''
+  
+
+'''
+  better way to do it : use Xor
+   
+    res = 0
+        for i in range(0, len(nums)):
+            res^= (i+1)^ nums[i]
+        return res  
+'''
    
    
        
