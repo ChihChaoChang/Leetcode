@@ -21,3 +21,16 @@ Line 10
 '''
 
 awk '{if(NR==10) print $0}' file.txt 
+# First
+
+awk "NR==10" file.txt
+# Second
+
+sed -n 10p file.txt
+#Third
+
+tail -n 10 file.txt | head -n 1
+# Forth
+
+head -n 10 file.txt | tail -n 1
+# Fifth
