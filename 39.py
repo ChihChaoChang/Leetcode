@@ -33,8 +33,9 @@ class Solution(object):
         length=len(candidates)
         if target ==0:
             Solution.result.append(valuelist)
-        if target < candidates[start]:
-            return
+        
         for i in range (start,length):
+            if target < candidates[start]:
+              return
             self.DFS(candidates, target-candidates[i], i, valuelist+ [candidates[i]])
     
