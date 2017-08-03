@@ -13,6 +13,9 @@ class Solution(object):
         :type divisor: int
         :rtype: int
         """
+        INT_MAX = 2147483647
+        if divisor == 0:
+            return INT_MAX
         if (dividend >0 and divisor >0) or (dividend <0 and divisor <0):
             sign =1
         else:
@@ -28,4 +31,6 @@ class Solution(object):
                 dividend -=tmp
                 tmp <<=1
                 k+=1
+        if q*sign > INT_MAX :
+            return INT_MAX   
         return q*sign
